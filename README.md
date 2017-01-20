@@ -6,8 +6,9 @@ This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?)
 
 - Memory-only
 - SELinux bypass
-- Very stable
-- Scalability
+- Stable
+- Scalable
+- Reversible
 
 ## Prerequisite
 - *I, Robot* by Isaac Asimov.
