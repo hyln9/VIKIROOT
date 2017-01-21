@@ -25,7 +25,7 @@ You may run it through an adb shell (place it under /data/local/tmp) and get a r
 ## Troubleshooting
 
 - "insufficient place for payload": a reboot is required
-- "waiting for reverse connect shell": please wake up your device or open the clock/alarm app in order to trigger the backdoor
+- "waiting for reverse connect shell": please wake up your device, open the clock/alarm app or toggle the bluetooth switch in order to trigger the backdoor
 
 ## Credits
 
