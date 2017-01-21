@@ -15,7 +15,7 @@ This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?)
 
 ## Building
 
-Binaries are available on the release page. Otherwise, just run `make` in a native aarch64 debian.
+Pre-built binaries are available on the release page. Otherwise, just run `make` in a native aarch64 debian. Currently it won't work if built with NDK.
 
 ## Usage
 
