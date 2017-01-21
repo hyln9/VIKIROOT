@@ -3,8 +3,8 @@
 This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?), as well as an universal & stable temporal root tool. It does not require a SUID executable or any filesystem changes.
 ## Features
 
-- Memory-only: does not modify the filesystem or need special executable
 - SELinux bypass
+- Memory-only: does not modify the filesystem or need special executable
 - Stable: does not affect stability of your device
 - Scalable: easy to add new kernel and/or new devices
 - Reversible: the backdoor is cleared automatically after the root shell ends, which means no reboot is required after usage
@@ -19,7 +19,7 @@ Binaries are available on the release page. Otherwise, just run `make` in a nati
 
 ## Usage
 
-You may run it through an adb shell and get a root shell either in the built-in terminal or a remote terminal server such as nc. For details, run it without any parameters.
+You may run it through an adb shell (place it under /data/local/tmp) and get a root shell either in the built-in terminal or a remote terminal server such as nc. For details, run it without any parameters.
 
 ## Credits
 
