@@ -3,11 +3,11 @@
 This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?), as well as an universal & stable temporal root tool. It does not require a SUID executable or any filesystem changes.
 ## Features
 
-- Memory-only
+- Memory-only: does not modify the filesystem or need special executable
 - SELinux bypass
-- Stable
-- Scalable
-- Reversible
+- Stable: does not affect stability of your device
+- Scalable: easy to add new kernel and/or new devices
+- Reversible: the backdoor is cleared automatically after the root shell ends, which means no reboot is required after usage
 
 ## Prerequisite
 - *I, Robot* by Isaac Asimov.
