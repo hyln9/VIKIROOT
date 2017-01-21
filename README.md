@@ -1,6 +1,7 @@
 # VIKIROOT
 
 This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?), as well as an universal & stable temporal root tool. It does not require a SUID executable or any filesystem changes.
+
 ## Features
 
 - SELinux bypass
@@ -21,12 +22,17 @@ Pre-built binaries are available on the release page. Otherwise, just run `make`
 
 You may run it through an adb shell (place it under /data/local/tmp) and get a root shell either in the built-in terminal or a remote terminal server such as nc. For details, run it without any parameters.
 
+## Troubleshooting
+
+- "insufficient place for payload": a reboot is required
+- "waiting for reverse connect shell": please wake up your device or open the clock/alarm app in order to trigger the backdoor
+
 ## Credits
 
-@scumjr for the vdso patching method.
+@scumjr for the vDSO patching method.
 
 ## TODO
 
 - Turn it into a SuperSU installer.
-- Enrich the kernel database for 32-bit support and so on.
+- Enrich the kernel database for 32-bit support (not likely) and so on.
 - Test it on Android 7 Nougat (help wanted!).
