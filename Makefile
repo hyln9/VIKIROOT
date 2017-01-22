@@ -4,6 +4,9 @@ CC := gcc
 AS := as
 OC := objcopy
 
+debug: CFLAGS += -DDBG
+debug: all
+
 all: exploit
 
 exploit: exploit.o
