@@ -26,6 +26,7 @@ You may run it through an adb shell (place it under /data/local/tmp) and get a r
 
 - "insufficient place for payload": a reboot is required
 - "waiting for reverse connect shell": please wake up your device, open the clock/alarm app or toggle the bluetooth switch in order to trigger the backdoor
+- still no luck: please run the "dbg" version and send an e-mail to me with the generated files which are just dump of some part of kernel and don't contain any personal information
 
 ## Credits
 
