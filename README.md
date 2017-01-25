@@ -10,9 +10,14 @@ This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?)
 - Scalable: easy to add new kernel and/or new devices
 - Reversible: the backdoor is cleared automatically after the root shell ends, which means no reboot is required after usage
 
+## Attention
+
+By "SELinux bypass" I mean the payload will run in init domian even if SELinux is in enforcing mode, however, a patch to sepolicy is still needed for making init domain unconfined. Usually this means a modified boot image is required.
+
 ## Prerequisite
 - *I, Robot* by Isaac Asimov.
 - "dirtycow-capable" device.
+- patched sepolicy
 
 ## Building
 
