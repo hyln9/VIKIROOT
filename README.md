@@ -4,7 +4,7 @@ This is a CVE-2016-5195 PoC for 64-bit Android 6.0.1 Marshmallow (perhaps 7.0 ?)
 
 ## Features
 
-- SELinux bypass
+- SELinux bypass (see below for details)
 - Memory-only: does not modify the filesystem or need special executable
 - Stable: does not affect stability of your device
 - Scalable: easy to add new kernel and/or new devices
@@ -29,13 +29,15 @@ You may run it through an adb shell (place it under /data/local/tmp) and get a r
 
 ## Troubleshooting
 
+- firstly please read through the "Attention" part above
 - "insufficient place for payload": a reboot is required
 - "waiting for reverse connect shell": please wake up your device, open the clock/alarm app or toggle the bluetooth switch in order to trigger the backdoor
 - still no luck: please run the "dbg" version and send an e-mail to me with the generated files which are just dump of some part of kernel and don't contain any personal information
 
 ## Credits
 
-@scumjr for the vDSO patching method.
+scumjr for the vDSO patching method.
+Tzul for helping me debug the sepolicy problem.
 
 ## TODO
 
