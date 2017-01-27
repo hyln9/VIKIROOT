@@ -1,8 +1,8 @@
-CFLAGS := -Os -Wall
-LDFLAGS := -pthread -static -s -Wall
-CC := gcc
-AS := as
-OC := objcopy
+CFLAGS := -Os -fPIE -Wall
+LDFLAGS := -pthread -s -pie -Wall
+CC := aarch64-linux-android-gcc
+AS := aarch64-linux-android-as
+OC := aarch64-linux-android-objcopy
 
 debug: CFLAGS += -DDBG
 debug: all

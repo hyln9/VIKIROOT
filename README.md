@@ -21,7 +21,7 @@ By "SELinux bypass" I mean the payload will run in init domian even if SELinux i
 
 ## Building
 
-Pre-built binaries are available on the release page. Otherwise, just run `make` in a native aarch64 debian. Currently it won't work if built with NDK.
+Pre-built binaries are available on the release page. Otherwise, just add NDK standalone toolchain into PATH and run `make`.
 
 ## Usage
 
@@ -38,9 +38,9 @@ You may run it through an adb shell (place it under /data/local/tmp) and get a r
 
 - scumjr for the vDSO patching method.
 - Tzul for helping me debug the sepolicy problem.
+- RenaKunisaki for making it work with bionic.
 
 ## TODO
 
-- Turn it into a SuperSU installer.
 - Enrich the kernel database for x86 support and so on.
 - Test it on Android 7 Nougat (help wanted!).
